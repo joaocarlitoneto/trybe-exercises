@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Solway:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.body {
+  background-color: #b0c4de;
+  text-align: center;
+}
+
+header.header {
+  background-color: #4682b4;
+  padding: 4rem;
+}
+
+header.header h1 {
+  font-size: 3rem;
+  font-family: "Solway", serif;
+}
+
+nav.navigation ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+nav.navigation ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav.navigation ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-family: "Overlock SC", cursive;
+}
+
+nav.navigation ul li a:hover {
+  font-weight: bold;
+}
+
+main.container {
+  width: 100%;
+}
+
+.main-header h2 {
+  font-size: 2rem;
+  font-family: "Overlock SC", cursive;
+  padding: 2rem 0;
+}
+
+.main-article {
+  margin: 0 15rem 2rem 15rem;
+}
+
+.main-article p {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5rem;
+}
+
+.main-table {
+  font-size: 1.5rem;
+  font-family: "Zilla Slab", serif;
+  border: 2px dashed #000;
+  max-width: 650px;
+  height: 400px;
+  float: right;
+  margin-right: 100px;
+}
+
+.title-table {
+  background-color: #4682b4;
+  font-weight: bold;
+  color: #000080;
+}
+
+.main-sidebar img {
+  width: 650px;
+  height: 400px;
+  margin-left: 70px;
+  border: 2px dashed #000;
+}
+
+.secondary-article h3 {
+  font-size: 1.8rem;
+  font-family: "Overlock SC", cursive;
+  margin: 2rem 0;
+}
+
+.secondary-article p {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5rem;
+  margin: 0 15rem 2rem 15rem;
+}
+
+.secondary-article img {
+  width: 650px;
+  height: 400px;
+  border: 2px dashed #000;
+  margin-bottom: 2rem;
+}
+
+.reference h3 {
+  font-size: 1.8rem;
+  font-family: "Overlock SC", cursive;
+  margin-bottom: 1rem;
+}
+
+.reference ul {
+  list-style: none;
+}
+
+.reference ul li {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5rem;
+}
+
+.reference ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.reference ul li a:hover {
+  font-weight: bold;
+}
+
+.footer {
+  background: #4682b4;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Solway", serif;
+}
