@@ -1,15 +1,15 @@
-let tamanho = 4;
-let quadrado = "";
-
+let tamanho = 4
+let quadrado = ""
 
 if (tamanho > 1) {
-  for (let column = 0; column < tamanho; column += 1) {
-    quadrado += "*";
+  for (let coluna = 0; coluna < tamanho; coluna += 1) {
+    quadrado += "*"
   }
 
-  for (let row = 0; row < tamanho; row += 1) {
+  for (let linha = 0; linha < tamanho; linha += 1) {
     console.log(quadrado)
   }
+
 } else {
   console.log("O tamanho precisa ser maior que 0")
 }

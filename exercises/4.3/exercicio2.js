@@ -1,4 +1,9 @@
+let tamanho = 8
+let triangulo = ""
 
-
-
-// 2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+if (tamanho > 1) {
+    for (let coluna = 0; coluna < tamanho; coluna += 1) {
+        triangulo += "*"
+        console.log(triangulo)
+    }
+}
