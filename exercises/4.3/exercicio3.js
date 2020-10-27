@@ -1,6 +1,5 @@
 let tamanho = 10
 
-
 if (tamanho > 1) {
     for (let linha = 1; linha < tamanho; linha += 1) {
         let trianguloInvertido = ""
