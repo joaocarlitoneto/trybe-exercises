@@ -6,4 +6,6 @@ if (tamanho > 1) {
         triangulo += "*"
         console.log(triangulo)
     }
+} else {
+    console.log("O tamanho precisa ser maior que 0")
 }
