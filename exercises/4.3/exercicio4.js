@@ -5,7 +5,7 @@ let espacoEsquerdo = meio
 let espacoDireito = meio
 
 if (tamanho > 1) {
-    for (let linha = 1; linha <= meio; linha += 1) {
+    for (let linha = 0; linha <= meio; linha += 1) {
         for (let coluna = 1; coluna <= tamanho; coluna += 1) {
             if (coluna > espacoDireito && coluna < espacoEsquerdo) {
                 piramide += "*"
