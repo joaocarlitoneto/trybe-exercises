@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .paragraph {
+        text-align: center;
+    }
+
+    .paragraph2 {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="paragraph2">Segundo parágrafo!</p>
+
+    <script>
+        var paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "red";
+
+        let title = document.getElementById('page-title')
+        title.innerText = "John Wick - De volta ao jogo"
+
+        let paragraph2 = document.getElementById('second-paragraph')
+        paragraph2.innerText = 'Sem criatividade para mudar o segundo parágrafo.'
+        paragraph2.style.background = "green"
+
+        let subtitle = document.getElementById('subtitle')
+        subtitle.innerText = 'Baba Yaga'
+
+        let classParagraph = document.getElementsByClassName('paragraph')
+        classParagraph[0].style.color = 'blue'
+
+        let tagSubtitle = document.getElementsByTagName('h4')
+    </script>
+</body>
+
+</html>
