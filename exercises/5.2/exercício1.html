@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /* Ex 01 */
+        let h1Element = document.createElement('h1')
+        h1Element.innerHTML = 'Exercício 5.2 - JavaScript DOM'
+        document.body.appendChild(h1Element)
+
+        /* Ex 02 */
+        let divMainElement = document.createElement('div')
+        divMainElement.className = 'main-content'
+        document.body.appendChild(divMainElement)
+
+        /* Ex 03 */
+        let divCenterElement = document.createElement('div')
+        divCenterElement.className = 'center-content'
+        divMainElement.appendChild(divCenterElement)
+
+        /* Ex 04 */
+        let pElement = document.createElement('p')
+        pElement.innerHTML = 'Texto alternativo'
+        divCenterElement.appendChild(pElement)
+
+        /* Ex 05 */
+        let divLeftElement = document.createElement('div')
+        divLeftElement.className = 'left-content'
+        divMainElement.appendChild(divLeftElement)
+
+        /* Ex 06 */
+        let divRightElement = document.createElement('div')
+        divRightElement.className = 'right-content'
+        divMainElement.appendChild(divRightElement)
+
+        /* Ex 07 */
+        let imgElement = document.createElement('img')
+        imgElement.className = 'small-image'
+        imgElement.src = 'https://picsum.photos/200'
+        divLeftElement.appendChild(imgElement)
+
+        /* Ex 08 */
+        let ulElement = document.createElement('ul')
+        let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+        for (number in numbers) {
+            let liElement = document.createElement('li')
+            liElement.innerHTML = numbers[number]
+            ulElement.appendChild(liElement)
+        }
+
+        divRightElement.appendChild(ulElement)
+
+        /* Ex 09 */
+        for (let i = 0; i < 3; i += 1) {
+            let h3Element = document.createElement('h3')
+            h3Element.innerHTML = 'Subtitle ' + i
+            divMainElement.appendChild(h3Element)
+        }
+
+        /* ----------------- PARTE 2 ------------------- */
+
+        /* Ex 01 */
+        let title = document.getElementsByTagName('h1')[0]
+        title.className = 'title'
+
+        /* Ex 02 */
+        let h3Elements = document.getElementsByTagName('h3')
+        for (let i = 0; i < 3; i += 1) {
+            h3Elements[i].className = 'description'
+        }
+
+        /* Ex 03*/
+        let divLeftContent = document.getElementsByClassName('left-content')[0]
+        divMainElement.removeChild(divLeftElement)
+
+        /* Ex 04 */
+        let divRightContent = document.getElementsByClassName('right-content')[0]
+        divRightContent.style.marginRight = 'auto'
+
+        /* Ex 05 */
+        divCenterContent = document.getElementsByClassName('center-content')[0]
+        divCenterContent.parentNode.style.backgroundColor = 'black'
+
+        /* Ex 06 */
+        ulElement.lastChild.remove()
+        ulElement.lastChild.remove()
+    </script>
+</body>
+
+</html>
