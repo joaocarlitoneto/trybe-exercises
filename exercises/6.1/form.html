@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -55,13 +60,15 @@
             <textarea name="descricao" id="textarea-descricao" cols="30" rows="10" maxlength="500" style="resize: none;"
                 required></textarea>
 
-            <label for="input-data-inicio">Data de Início</label>
-            <input type="text" name="data-inicio" id="input-data-inicio" minlength="10" maxlength="10" required>
+            <label for="datepicker">Data de Início</label>
+            <input type="text" id="datepicker">
         </fieldset>
 
         <button id="submit" type="submit">Enviar</button>
     </form>
 
+    <script src="js/pikaday.js"></script>
+    <script src="js/moment.js"></script>
     <script src="js/script.js"></script>
 </body>
 
