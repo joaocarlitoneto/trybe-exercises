@@ -1,3 +1,9 @@
 .error {
     border: 1px solid red;
 }
+
+body {
+    background-color: darkgray;
+    width: 80%;
+    margin: 0 auto;
+}
