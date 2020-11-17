@@ -1,0 +1,97 @@
+/* Ex 01 */
+.tower-group-1 {
+    display: flex;
+    justify-content: center;
+} 
+
+/* Ex 02 */
+.tower-group-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+.tower-group-2 {
+    display: flex;
+    justify-content: center;
+}
+.tower-group-3 {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+/* Ex 03 */
+.tower-group-1 {
+    display: flex;
+    justify-content: center;
+} 
+.tower-group-2 {
+    display: flex;
+    justify-content: space-between;
+} 
+
+/* Ex 04 */
+.tower-group-1 {
+    display: flex;
+    align-items: flex-end;
+} 
+.tower-group-2 {
+    display: flex;
+    align-items: flex-end;
+} 
+
+/* Ex 05 */
+.tower-group-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+} 
+.tower-group-2 {
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.tower-group-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+/* Ex 06 */
+.tower-group-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+/* Ex 07 */
+.tower-group-1 {
+    display: flex;
+    flex-direction: column;
+} 
+.tower-group-2 {
+    display: flex;
+    flex-direction: column;
+} 
+
+/* Ex 08 */
+.tower-group-1 {
+    display: flex;
+    flex-direction: column;
+} 
+.tower-group-2 {
+    display: flex;
+    align-items: center;
+} 
+
+/* Ex 09 */
+.tower-group-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+} 
+.tower-group-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+} 
