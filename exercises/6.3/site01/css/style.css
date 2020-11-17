@@ -1,0 +1,88 @@
+/* EX 01 */
+#pond {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* EX 02 */
+#pond {
+    display: flex;
+    justify-content: center;
+}
+
+/* EX 03 */
+#pond {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* EX 04 */
+#pond {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* EX 05 */
+#pond {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* EX 06 */
+#pond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* EX 07 */
+#pond {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* EX 08 */
+#pond {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* EX 09 */
+#pond {
+    display: flex;
+    flex-direction: column
+}
+
+/* EX 10 */
+#pond {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* EX 11 */
+#pond {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* EX 12 */
+#pond {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+/* EX 13 */
+#pond {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
