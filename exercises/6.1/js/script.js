@@ -1,5 +1,3 @@
-const validationMin = require("./validation.min");
-
 const estados = [
     'Acre',
     'Alagoas',
@@ -39,3 +37,9 @@ for (let estado = 0; estado < estados.length; estado += 1) {
 }
 
 validation.init("form");
+
+
+const button = document.querySelector('#submit');
+button.addEventListener('click', function () {
+    validation.validate();
+})
