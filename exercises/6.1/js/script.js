@@ -68,7 +68,11 @@ function createCV() {
 
 createCV();
 
-
-
+/* -------------------------------------------------- */
 
 const buttonClear = document.querySelector('#limpar');
+buttonClear.addEventListener('click', function (event) {
+    event.preventDefault();
+    let showCV = document.querySelector('#show-cv');
+    showCV.innerHTML = '';
+})
