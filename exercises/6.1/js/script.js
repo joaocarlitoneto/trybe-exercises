@@ -36,10 +36,39 @@ for (let estado = 0; estado < estados.length; estado += 1) {
     selectEstados.appendChild(option);
 }
 
+/* -------------------------------------------------- */
+
 validation.init("form");
 
-
-const button = document.querySelector('#submit');
-button.addEventListener('click', function () {
+const buttonCV = document.querySelector('#submit');
+buttonCV.addEventListener('click', function (event) {
+    event.preventDefault();
     validation.validate();
 })
+
+/* -------------------------------------------------- */
+
+const formulario = document.querySelector('form');
+
+function createCV() {
+    buttonCV.addEventListener('click', function (event) {
+        event.preventDefault();
+        let data = document.querySelectorAll('.data-cv');
+        let showCV = document.querySelector('#show-cv');
+
+        showCV.innerHTML = '';
+        for (let index = 0; index < data.length; index += 1) {
+            let paragraph = document.createElement('p');
+            paragraph.innerHTML = data[index].value;
+            showCV.appendChild(paragraph);
+        }
+        formulario.reset();
+    })
+}
+
+createCV();
+
+
+
+
+const buttonClear = document.querySelector('#limpar');

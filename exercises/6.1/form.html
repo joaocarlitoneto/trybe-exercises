@@ -17,27 +17,27 @@
         <fieldset>
             <legend>Dados pessoais</legend>
             <label class="form-check-label" for="input-nome">Nome</label>
-            <input class="input-group validate" type="text" name="nome" id="input-nome" maxlength="40"
+            <input class="input-group validate data-cv" type="text" name="nome" id="input-nome" maxlength="40"
                 data-validate="required">
 
             <label class=" form-check-label" for="input-email">Email</label>
-            <input class="input-group validate" type="text" name="email" id="input-email" maxlength="50"
+            <input class="input-group validate data-cv" type="text" name="email" id="input-email" maxlength="50"
                 data-validate="required">
 
             <label class="form-check-label" for="input-cpf">Cpf</label>
-            <input class="input-group validate" type="text" name="cpf" id="input-cpf" maxlength="11"
+            <input class="input-group validate data-cv" type="text" name="cpf" id="input-cpf" maxlength="11"
                 data-validate="required">
 
             <label class="form-check-label" for="input-endereco">Endereço</label>
-            <input class="input-group validate" type="text" name="endereco" id="input-endereco" maxlength="200"
+            <input class="input-group validate data-cv" type="text" name="endereco" id="input-endereco" maxlength="200"
                 data-validate="required">
 
             <label class="form-check-label" for="input-cidade">Cidade</label>
-            <input class="input-group validate" type="text" name="cidade" id="input-cidade" maxlength="28"
+            <input class="input-group validate data-cv" type="text" name="cidade" id="input-cidade" maxlength="28"
                 data-validate="required">
 
             <label class="form-check-label" for="select-estado">Estado</label>
-            <select class="form-control validate" name="estado" id="select-estado" data-validate="required">
+            <select class="form-control validate data-cv" name="estado" id="select-estado" data-validate="required">
                 <option value="" selected disabled>Selecione um estado</option>
             </select>
 
@@ -54,23 +54,29 @@
         <fieldset>
             <legend>Dados último emprego</legend>
             <label class="form-check-label" for="textarea-resumo">Resumo do currículo</label>
-            <textarea class="form-control validate" name="curriculo" id="textarea-curriculo" cols="30" rows="10"
+            <textarea class="form-control validate data-cv" name="curriculo" id="textarea-curriculo" cols="30" rows="10"
                 maxlength="1000" style="resize: none;" data-validate="required"></textarea>
 
             <label class="form-check-label" for="input-cargo">Cargo</label>
-            <input class="input-group validate" type="text" name="cargo" id="input-cargo" maxlength="40"
+            <input class="input-group validate data-cv" type="text" name="cargo" id="input-cargo" maxlength="40"
                 data-validate="required">
 
             <label class="form-check-label" for="textarea-descricao">Descrição Cargo</label>
-            <textarea class="form-control validate" name="descricao" id="textarea-descricao" cols="30" rows="10"
+            <textarea class="form-control validate data-cv" name="descricao" id="textarea-descricao" cols="30" rows="10"
                 maxlength="500" style="resize: none;" data-validate="required"></textarea>
 
             <label class="form-check-label" for="datepicker">Data de Início</label>
-            <input class="input-group validate" type="text" id="datepicker" data-validate="required">
+            <input class="input-group validate data-cv" type="text" id="datepicker" data-validate="required">
         </fieldset>
 
-        <button id="submit" type="submit" class="btn btn-primary">Enviar</button>
+        <button id="submit" type="submit" class="btn btn-primary">Montar CV</button>
+        <button id="limpar" class="btn btn-danger">Limpar campos</button>
     </form>
+
+    <section id="show-cv">
+
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="js/validation.min.js"></script>
