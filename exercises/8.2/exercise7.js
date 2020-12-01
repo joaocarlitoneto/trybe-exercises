@@ -70,3 +70,7 @@ function authorWith3DotsOnName() {
 }
 
 assert.deepEqual(authorWith3DotsOnName(), expected_result);
+
+/*
+Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais (terminam com um ponto).
+*/

@@ -64,31 +64,18 @@ const books = [
 ];
 
 const expected_result = [
-  {
-    id: 6,
-    name: 'O Chamado de Cthulhu',
-    genre: 'Terror',
-    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
-    releaseYear: 1928
-  },
-  {
-    id: 3,
-    name: 'Fundação',
-    genre: 'Ficção Científica',
-    author: { name: 'Isaac Asimov', birthYear: 1920 },
-    releaseYear: 1951
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
-    releaseYear: 1954
-  }
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien'
 ]
 
-function oldBooks() {
-  // escreva seu código aqui
+function fantasyOrScienceFictionAuthors() {
+  return books.filter(element => element.genre === 'Ficção Científica' || element.genre === 'Fantasia').map(element => element.author.name).sort();
 }
 
-assert.deepEqual(oldBooks(), expected_result);
+assert.deepEqual(fantasyOrScienceFictionAuthors(), expected_result);
+
+/*
+Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+*/
