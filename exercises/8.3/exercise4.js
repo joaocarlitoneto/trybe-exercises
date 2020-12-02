@@ -75,7 +75,7 @@ const expectedResult = {
 
 /*Encontre o livro com o maior nome.*/
 function longestNamedBook() {
-  // escreva seu código aqui
+  
 }
 
 assert.deepEqual(longestNamedBook(), expectedResult);
