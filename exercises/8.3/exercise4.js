@@ -75,7 +75,7 @@ const expectedResult = {
 
 /*Encontre o livro com o maior nome.*/
 function longestNamedBook() {
-  
+  return books.reduce((acc, cur) => acc.name.length > cur.name.length ? acc : cur);
 }
 
 assert.deepEqual(longestNamedBook(), expectedResult);
